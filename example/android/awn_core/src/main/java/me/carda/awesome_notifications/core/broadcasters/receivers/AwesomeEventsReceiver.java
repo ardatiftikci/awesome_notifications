@@ -206,7 +206,7 @@ public class AwesomeEventsReceiver {
             notificationReceived.validate(context);
 
             if (AwesomeNotifications.debug)
-                Logger.d(TAG, "New notification creation event");
+                Logger.d(TAG, "New notification creation event 2!");
 
             notifyNotificationEvent(Definitions.EVENT_NOTIFICATION_CREATED, notificationReceived);
 
