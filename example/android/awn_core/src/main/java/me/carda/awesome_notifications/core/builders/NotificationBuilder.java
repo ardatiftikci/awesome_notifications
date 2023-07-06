@@ -721,6 +721,8 @@ public class NotificationBuilder {
 
         if (contentLocked) {
             builder.setOngoing(true);
+            builder.setTimeoutAfter(30000);
+            Logger.d(TAG, "Ongoing");
         } else if (channelLocked) {
             boolean lockedValue = BooleanUtils.getInstance().getValueOrDefault(notificationModel.content.locked, true);
             builder.setOngoing(lockedValue);
